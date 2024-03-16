@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Responsive Animated Filterable Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(215, 219, 211);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .gallery-item {
+            width: 100%;
+            padding: 10px;
+            
+        }
+
+        .filter-btns {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .filter-btn {
+            margin: 5px;
+        }
+        .img-fluid:hover{
+            transform: scale(1.09);
+        }
+        .img-fluid{
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 13px;
+        }
+        .btn{
+            background-color: #FFD333;
+            margin-top: 18px;
+            color: rgb(0, 0, 0);
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+        .btn:hover{
+            color: rgb(255, 255, 255);
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="filter-btns">
+        <button class="btn btn- filter-btn" data-filter="all">All</button>
+        <button class="btn btn- filter-btn" data-filter="nature">Oils & Condiments</button>
+        <button class="btn btn- filter-btn" data-filter="architecture">Flours and Rices</button>
+        <button class="btn btn- filter-btn" data-filter="travel">Spices & cereals</button>
+    </div>
+
+    <div class="gallery mt-3">
+        <div class="gallery-item nature mt-5">
+            <img src="mez1.jpg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+            <img src="mez2.jpeg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+            <img src="mez3.jpeg" class="img-fluid m-2" alt="oil" width="242px" height="220px">
+            <img src="mez4.jpeg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+            <img src="mez5.jpeg" class="img-fluid m-2" alt="oil" width="242px" height="0px">
+          
+           
+         
+            <img src="mez1.jpg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+            <img src="mez2.jpeg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+            <img src="mez3.jpeg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+            <img src="mez4.jpeg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+            <img src="mez5.jpeg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+         
+            
+            <img src="soya-sup-oil-1ltr.jpg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+            <img src="sufi-oil-10ltr.jpg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+            <img src="rafan-corn-oil.jpg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+            <img src="sufi-oil-bottle.jpg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+            <img src="mustard-oil.jpg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+            <img src="habib-oil.jpg" class="img-fluid m-2" alt="oil" width="242px" height="270px">
+        </div>
+        <div class="gallery-item architecture mt-3">
+            <img src="aata_1sunridge_white_chakki_atta_5kg.jpg" width="242px" height="270px" class="img-fluid m-2" alt="Architecture 1">
+            <img src="atta_2-sunridge_super_fine_atta_5kg.jpg" width="242px" height="270px" class="img-fluid m-2" alt="Architecture 1">
+            <img src="atta-3sunridge_high_fiber_atta_5kg.jpg" width="242px" height="270px"  class="img-fluid m-2" alt="Architecture 1">
+            <img src="atta4sunridge_chakki_atta_5kg.jpg" width="242px" height="270px" class="img-fluid m-2" alt="Architecture 1">
+            <img src="atta-5mcp0000024376.jpeg" width="242px" height="270px" class="img-fluid m-2" alt="Architecture 1">
+            <img src="atta-6mcp000002395.jpg" width="242px" height="270px" class="img-fluid m-2" alt="Architecture 1">
+          
+            <img src="rice2-shahenshah_special_best_quality_rice_5kg.jpg" width="242px" height="270px" class="img-fluid m-2" alt="Architecture 1">
+            <img src="rice-3reem_ka_steam_3x_extra_long_steamed_basmati_rice_5kg.jpg" width="242px" height="270px" class="img-fluid m-2" alt="Architecture 1">
+            <img src="rice-4reem_super_basmati_1kg.jpg" width="242px" height="270px" class="img-fluid m-2" alt="Architecture 1">
+            <img src="rice-5reem_ka_steam_2x_steamed_basmati_rice_5kg.jpg" width="242px" height="270px" class="img-fluid m-2" alt="Architecture 1">
+            <img src="rice-6reem_ka_sella_5kg.jpg" width="242px" height="270px" class="img-fluid m-2" alt="Architecture 1">
+            <img src="rice-7leela_irri_rice_-_1kg.jpg" width="242px" height="270px" class="img-fluid m-2" alt="Architecture 1">
+            
+        </div>
+        <div class="gallery-item travel">
+            <img src="project/home project/showcase gallery/Grocery_edit.jpg" class="img-fluid" alt="Travel 1">
+        </div>
+        <!-- Add more gallery items with appropriate classes and images -->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+       
+        $('.filter-btn').on('click', function () {
+            var filterValue = $(this).attr('data-filter');
+
+           
+            if (filterValue === 'all') {
+                $('.gallery-item').show();
+            } else {
+               
+                $('.gallery-item').hide();
+                $('.' + filterValue).show();
+            }
+
+            $('.filter-btn').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        
+        $('.gallery-item').hover(
+            function () {
+                $(this).css('transform', 'scale(1.1)');
+            },
+            function () {
+                $(this).css('transform', 'scale(1)');
+            }
+        );
+    });
+</script>
+
+</body>
+</html>
